@@ -6,10 +6,7 @@ import com.test.test_app.R
 
 
 class SearchNavigatorImpl : SearchNavigator {
-
-    override fun navigate() {
-     }
-
+    override fun navigate() {}
 
     override var navController: NavController? = null
 }

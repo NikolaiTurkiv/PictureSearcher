@@ -9,10 +9,8 @@ internal fun getPictureAdapterDelegate() =
     adapterDelegateViewBinding<Picture, Picture, PictureSearchItemBinding>({ layoutInflater, parent ->
         PictureSearchItemBinding.inflate(layoutInflater, parent, false)
     }) {
-
         bind {
             if (item.image.isNotEmpty())
                 Picasso.get().load(item.image).into(binding.image)
         }
-
     }
